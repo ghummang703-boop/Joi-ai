@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="ur" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Joi AI</title>
+
+<style>
+
+body{margin:0;background:#101522;color:white;font-family:Arial,sans-serif;text-align:center;padding:25px}
+
+h1{color:#70e1ff;margin-top:60px}
+
+p{color:#cbd5e1}
+
+input{width:90%;padding:15px;border-radius:14px;border:0;font-size:16px;margin-top:25px}
+
+button{padding:13px 22px;border:0;border-radius:12px;background:#70e1ff;color:#101522;font-size:17px;margin:10px}
+
+#answer{white-space:pre-wrap;line-height:1.8}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Joi AI ✨</h1>
+
+<p>آپ کی ذاتی AI معاون</p>
+
+<input id="question" placeholder="مجھ سے کچھ پوچھیں...">
+
+<br>
+
+<button onclick="reply()">پوچھیں</button>
+
+<p id="answer">السلام علیکم! میں Joi ہوں۔ آپ کی کیا مدد کروں؟</p>
+
+<script>
+
+function reply(){
+
+let q=document.getElementById('question').value.trim();
+
+document.getElementById('answer').textContent=q
+
+?'آپ نے پوچھا: '+q+'\n\nفی الحال میرا AI کنکشن فعال نہیں ہے۔'
+
+:'براہِ کرم اپنا سوال لکھیں۔';
+
+}
+
+</script>
+
+</body>
+
+</html>
